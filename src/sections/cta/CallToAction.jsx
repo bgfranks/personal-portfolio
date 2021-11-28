@@ -1,9 +1,52 @@
-// Styles
-import './CallToAction.scss';
+import styled from 'styled-components';
+
+// Styles and Images
+import Raleigh from '../../assets/raleigh.png';
+
+const HeadSection = styled.div`
+  background-color: #211e1f;
+  height: 95vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(${Raleigh});
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 25px;
+  color: #e5e5e5;
+
+  .title {
+    font-size: 3rem;
+    padding-bottom: 30px;
+
+    :first-child {
+      padding-bottom: 10px;
+    }
+  }
+
+  .job {
+    font-size: 1.8rem;
+    padding-bottom: 30px;
+    color: #ddd;
+    font-weight: 300;
+
+    :first-child {
+      padding-bottom: 10px;
+    }
+  }
+
+  .btn {
+    border: 2px solid #e5e5e5;
+    background: transparent;
+    width: 120px;
+    color: #e5e5e5;
+    padding: 10px 30px;
+  }
+`;
 
 export default function CallToAction() {
   return (
-    <div className='cta'>
+    <HeadSection>
       <div className='title'>
         <p>Brandon</p>
         <p>Franks</p>
@@ -13,6 +56,6 @@ export default function CallToAction() {
         <p>Developer</p>
       </div>
       <button className='btn'>My Work</button>
-    </div>
+    </HeadSection>
   );
 }
