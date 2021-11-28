@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 // components
 import Burger from './Burger';
-import NavItems from './NavItems';
 
 // styles and images
 import Logo from '../../assets/logo.png';
@@ -30,7 +29,6 @@ export default function Navbar() {
         <img src={Logo} alt='Brandon Franks Logo' />
       </div>
       <Burger />
-      <NavItems />
     </NavBar>
   );
 }
