@@ -1,4 +1,5 @@
 // components
+import Footer from './components/footer/Footer';
 import Navbar from './components/navbar/Navbar';
 import About from './sections/about/About';
 import CallToAction from './sections/cta/CallToAction';
@@ -11,6 +12,7 @@ function App() {
       <CallToAction />
       <Projects />
       <About />
+      <Footer />
     </div>
   );
 }

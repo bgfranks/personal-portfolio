@@ -8,7 +8,7 @@ const NavBarItems = styled.ul`
   right: 0;
   background-color: #181617;
   opacity: 0.7;
-  height: 100vh;
+  height: 95vh;
   padding-top: 3.5rem;
   transform: ${({ open }) => (open ? 'translateX(100%)' : 'translateX(0)')};
   transition: transform 0.3s ease-in-out;
