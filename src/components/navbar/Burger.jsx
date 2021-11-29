@@ -40,7 +40,7 @@ const StyledBurger = styled.div`
 `;
 
 export default function Burger() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   return (
     <>
