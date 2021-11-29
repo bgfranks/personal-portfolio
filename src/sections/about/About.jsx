@@ -5,7 +5,6 @@ import { BsGithub, BsTwitter, BsFacebook } from 'react-icons/bs';
 
 const AboutSection = styled.div`
   background-color: #000;
-  height: 80vh;
   padding: 25px 25px;
   display: flex;
   flex-direction: column;
@@ -62,8 +61,13 @@ const AboutSection = styled.div`
   }
 
   // tiny phones
-  @media (max-width: 350px) {
-    height: 100vh;
+  @media (min-width: 300px) {
+    height: 120vh;
+  }
+
+  // small phones
+  @media (min-width: 360px) {
+    height: 80vh;
 
     h2 {
       font-size: 1.2rem;
@@ -86,6 +90,16 @@ const AboutSection = styled.div`
         font-size: 1.2rem;
       }
     }
+  }
+
+  // normal phones
+  @media (min-width: 375px) {
+    height: 65vh;
+  }
+
+  // larger phones
+  @media (min-width: 400px) {
+    height: 65vh;
   }
 `;
 

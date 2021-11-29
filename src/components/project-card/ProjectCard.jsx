@@ -5,7 +5,6 @@ const Card = styled.div`
   background-color: #000;
   display: flex;
   flex-direction: column;
-  height: 325px;
   margin: 20px 0;
 
   .project-image {
@@ -55,9 +54,9 @@ const Card = styled.div`
     }
   }
 
-  // tiny phones
-  @media (max-width: 350px) {
-    height: 300px;
+  // small phones
+  @media (min-width: 360px) {
+    height: 320px;
 
     .about-project {
       h3 {
@@ -70,9 +69,14 @@ const Card = styled.div`
 
       .btn {
         font-size: 0.8rem;
-        margin: 0 10px 10px;
+        margin: 0 10px 20px;
       }
     }
+  }
+
+  // larger phones
+  @media (min-width: 400px) {
+    height: 330px;
   }
 `;
 
