@@ -9,7 +9,6 @@ import Expensely from '../../assets/expensely.png';
 
 const ProjectContainer = styled.div`
   background-color: #181617;
-  height: 100vh;
   padding: 0 25px;
   display: flex;
   align-items: center;
@@ -27,8 +26,8 @@ const ProjectContainer = styled.div`
   }
 
   // tiny phones
-  @media (max-width: 350px) {
-    height: 130vh;
+  @media (min-width: 300px) {
+    height: 140vh;
 
     .title {
       padding: 20px 0 0;
@@ -37,6 +36,29 @@ const ProjectContainer = styled.div`
         font-size: 1.2rem;
       }
     }
+  }
+
+  // smmall phones
+  @media (min-width: 360px) {
+    height: 120vh;
+
+    .title {
+      padding: 20px 0 0;
+
+      h2 {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  // normal phone
+  @media (min-width: 375px) {
+    height: 100vh;
+  }
+
+  // larger phones
+  @media (min-width: 400px) {
+    height: 110vh;
   }
 `;
 
