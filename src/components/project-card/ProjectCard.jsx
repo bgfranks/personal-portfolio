@@ -54,6 +54,26 @@ const Card = styled.div`
       }
     }
   }
+
+  // tiny phones
+  @media (max-width: 350px) {
+    height: 300px;
+
+    .about-project {
+      h3 {
+        font-size: 1rem;
+      }
+
+      p {
+        font-size: 0.8rem;
+      }
+
+      .btn {
+        font-size: 0.8rem;
+        margin: 0 10px 10px;
+      }
+    }
+  }
 `;
 
 export default function ProjectCard({ title, imgUrl, about }) {

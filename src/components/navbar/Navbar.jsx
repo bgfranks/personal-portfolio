@@ -14,6 +14,7 @@ const NavBar = styled.div`
   background-color: #221e1f;
   padding: 0 20px;
   color: #ddd;
+  overflow-x: hidden;
 
   .logo {
     img {

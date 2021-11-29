@@ -25,6 +25,19 @@ const ProjectContainer = styled.div`
       font-size: 1.5rem;
     }
   }
+
+  // tiny phones
+  @media (max-width: 350px) {
+    height: 130vh;
+
+    .title {
+      padding: 20px 0 0;
+
+      h2 {
+        font-size: 1.2rem;
+      }
+    }
+  }
 `;
 
 // card data

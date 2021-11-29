@@ -60,6 +60,33 @@ const AboutSection = styled.div`
       color: #00acee;
     }
   }
+
+  // tiny phones
+  @media (max-width: 350px) {
+    height: 100vh;
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    .picture {
+      width: 190px;
+    }
+
+    .about-text {
+      line-height: 1rem;
+
+      p {
+        font-size: 0.8rem;
+      }
+    }
+
+    .about-icons {
+      .icon {
+        font-size: 1.2rem;
+      }
+    }
+  }
 `;
 
 export default function About() {
