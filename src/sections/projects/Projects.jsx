@@ -60,6 +60,20 @@ const ProjectContainer = styled.div`
   @media (min-width: 400px) {
     height: 110vh;
   }
+
+  // tablets
+  @media (min-width: 760px) {
+    height: 72vh;
+    padding: 0 50px;
+
+    .title {
+      padding: 30px 0 20px;
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
 `;
 
 // card data

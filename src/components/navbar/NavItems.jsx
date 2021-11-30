@@ -6,8 +6,7 @@ const NavBarItems = styled.ul`
   position: fixed;
   top: 0;
   right: 0;
-  background-color: #181617;
-  opacity: 0.7;
+  background: hsl(0 0% 0% / 0.5);
   height: 95vh;
   padding-top: 3.5rem;
   transform: ${({ open }) => (open ? 'translateX(100%)' : 'translateX(0)')};
@@ -15,6 +14,25 @@ const NavBarItems = styled.ul`
 
   li {
     padding: 25px 60px;
+    color: #999;
+    transition: all 0.3s;
+
+    :hover {
+      color: #e5e5e5;
+    }
+  }
+
+  // tablet
+  @media (min-width: 760px) {
+    position: absolute;
+    flex-direction: row;
+    padding: 0;
+    right: 33%;
+    background: none;
+
+    li {
+      padding: 15px 30px 15px 0;
+    }
   }
 `;
 

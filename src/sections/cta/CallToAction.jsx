@@ -42,6 +42,34 @@ const HeadSection = styled.div`
     color: #e5e5e5;
     padding: 10px 30px;
   }
+
+  // tablets
+  @media (min-width: 760px) {
+    padding: 0 50px;
+
+    .title {
+      margin-bottom: 20px;
+
+      p {
+        font-size: 3.8rem;
+        padding-right: 20px;
+        display: inline;
+      }
+    }
+
+    .job {
+      font-size: 2.5rem;
+
+      p {
+        padding-bottom: 20px;
+      }
+    }
+
+    .btn {
+      font-size: 1.2rem;
+      width: 140px;
+    }
+  }
 `;
 
 export default function CallToAction() {

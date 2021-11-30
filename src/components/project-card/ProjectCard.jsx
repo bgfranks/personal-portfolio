@@ -54,9 +54,18 @@ const Card = styled.div`
     }
   }
 
+  //tiny phones
+  @media (min-width: 300px) {
+    height: 320px;
+  }
+
   // small phones
   @media (min-width: 360px) {
-    height: 320px;
+    height: 280px;
+
+    .project-image {
+      height: 45%;
+    }
 
     .about-project {
       h3 {
@@ -77,6 +86,51 @@ const Card = styled.div`
   // larger phones
   @media (min-width: 400px) {
     height: 330px;
+  }
+
+  // tablets
+  @media (min-width: 760px) {
+    flex-direction: row;
+    height: 300px;
+    margin: 0;
+
+    :nth-child(2) {
+      flex-direction: row-reverse;
+    }
+
+    .project-image {
+      height: 100%;
+      width: 135%;
+
+      img {
+        height: 100%;
+        width: 100%;
+        image-rendering: auto;
+        image-rendering: crisp-edges;
+        image-rendering: pixelated;
+      }
+    }
+
+    .about-project {
+      align-items: flex-start;
+      text-align: left;
+      padding-left: 20px;
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        padding: 10px 20px 20px 0;
+        font-size: 1rem;
+        line-height: 1.3;
+      }
+
+      .btn {
+        margin-left: 0;
+        margin-right: 20px;
+      }
+    }
   }
 `;
 
