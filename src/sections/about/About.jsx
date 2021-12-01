@@ -138,6 +138,72 @@ const AboutSection = styled.div`
       }
     }
   }
+
+  // Large tablets & laptops
+  @media (min-width: 1020px) {
+    height: 35vh;
+  }
+
+  // Large Tablets and laptops
+  @media (min-width: 1020px) {
+    height: 100vh;
+    padding-inline: 250px;
+
+    h2 {
+      padding: 50px 0;
+    }
+
+    .about-container {
+      justify-content: space-around;
+      align-items: flex-start;
+
+      .picture {
+        width: 40%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .about-content {
+      padding-bottom: 20%;
+      width: 60%;
+
+      .about-text {
+        width: 60%;
+        p {
+          font-size: 1.5rem;
+          line-height: 1.3;
+          padding-bottom: 50px;
+        }
+      }
+
+      .about-icons {
+        padding-top: 50px;
+        .icon {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  // XL screens
+  @media (min-width: 1660px) {
+    padding-inline: 280px;
+    height: 65vh;
+
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    .about-container {
+      .picture {
+        width: 30%;
+        padding-right: 10%;
+      }
+    }
+  }
 `;
 
 export default function About() {
