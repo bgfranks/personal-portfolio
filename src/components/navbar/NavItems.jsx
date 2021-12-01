@@ -11,6 +11,7 @@ const NavBarItems = styled.ul`
   padding-top: 3.5rem;
   transform: ${({ open }) => (open ? 'translateX(100%)' : 'translateX(0)')};
   transition: transform 0.3s ease-in-out;
+  backdrop-filter: blur(2rem);
 
   li {
     padding: 25px 60px;
@@ -24,14 +25,20 @@ const NavBarItems = styled.ul`
 
   // tablet
   @media (min-width: 760px) {
-    position: absolute;
-    flex-direction: row;
-    padding: 0;
-    right: 33%;
-    background: none;
+  }
+
+  // large tablets & laptops
+  @media (min-width: 1020px) {
+  }
+
+  // Large Tablets and laptops
+  @media (min-width: 1020px) {
+    width: 25%;
 
     li {
-      padding: 15px 30px 15px 0;
+      font-size: 1.2rem;
+      padding-bottom: 50px;
+      height: 10%;
     }
   }
 `;

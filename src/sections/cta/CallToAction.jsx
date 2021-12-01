@@ -70,6 +70,11 @@ const HeadSection = styled.div`
       width: 140px;
     }
   }
+
+  // larger screens
+  @media (min-width: 1440px) {
+    padding-inline: 130px;
+  }
 `;
 
 export default function CallToAction() {

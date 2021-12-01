@@ -74,6 +74,27 @@ const ProjectContainer = styled.div`
       }
     }
   }
+
+  // Large Tablets and laptops
+  @media (min-width: 1020px) {
+    height: 60vh;
+    padding: 0 200px;
+
+    .title {
+      padding: 50px 0;
+
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  // Large Tablets and laptops
+  @media (min-width: 1020px) {
+    height: 100vh;
+    padding-bottom: 5%;
+    padding-inline: 100px;
+  }
 `;
 
 // card data

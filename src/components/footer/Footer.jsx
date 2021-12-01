@@ -19,6 +19,10 @@ const Foot = styled.div`
     font-size: 0.8rem;
     color: #999;
   }
+
+  @media (min-width: 1020px) {
+    height: 8vh;
+  }
 `;
 
 export default function Footer() {

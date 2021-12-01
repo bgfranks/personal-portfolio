@@ -21,8 +21,21 @@ const NavBar = styled.div`
     }
   }
 
+  // phone
   @media (min-width: 760px) {
     padding: 0 50px;
+  }
+
+  // Large Tablets and laptops
+  @media (min-width: 1020px) {
+    padding: 0 120px;
+    height: 80px;
+
+    .logo {
+      img {
+        height: 80px;
+      }
+    }
   }
 `;
 

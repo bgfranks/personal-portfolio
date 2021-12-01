@@ -132,6 +132,43 @@ const Card = styled.div`
       }
     }
   }
+
+  // large tablets & laptops
+  @media (min-width: 1020px) {
+    .project-image {
+      width: 96%;
+    }
+  }
+
+  // decent size monitors
+  @media (min-width: 1440px) {
+    height: 100%;
+    max-width: 85%;
+
+    .project-image {
+      width: 50%;
+    }
+
+    .about-project {
+      width: 45%;
+
+      :nth-child(2) {
+        padding-left: 70px;
+      }
+
+      .text {
+        width: 70%;
+
+        h3 {
+          font-size: 2.2rem;
+        }
+
+        p {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
 `;
 
 export default function ProjectCard({ title, imgUrl, about }) {
